@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+p {
+  text-align:left;
+}
+p input {
+  float:right;
+}  
+</style>
+</head>
+<body >
+ <h1 > Next Word Prediction </h1><br>
+
+ <form action="/predict" method="POST">
+ <p>
+     <label for="fname"><h2>Enter your Sentence:</h2></label><br>
+     <input type = "text" name = "feedtext" /><br>
+     <label for="fname"><h2>No of Words to predict:</h2></label><br>
+     <input type = "text" name = "noofwords" /><br><br>
+     <button type = "submit" name  = "predict"> Predict Word </button><br>
+ </p>    
+ </form>
+
+</body>
+
+
+
+
+{{prediction_text}}
+
+
+
+</html>
